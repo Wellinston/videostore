@@ -1,0 +1,211 @@
+*{
+  box-sizing: border-box;  
+}
+
+body{
+  background-color: rgb(184, 184, 184);
+  font-family: Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+#logo h1{
+  font-family: 'Pangolin', cursive;
+  color: black;
+  font-size: 3rem;
+}
+
+#logoImg{
+  width: 135px;
+  height: 120px;
+  margin-right: -17px;
+}
+
+.menu{
+  background-color: black; 
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 10px lightseagreen;
+}
+
+.menu a{
+  display: block;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;  
+}
+
+.menu a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+#buscaBloco{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#botaoBusca{
+  cursor: pointer;
+}
+
+#busca{ 
+  width: 500px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#categorias{
+  color: black;
+  font-size: 25px;
+  margin-top: 5%;
+}
+
+.filmeNome{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.filmePreco{
+  color:black;
+  font-size: 15px;
+}
+
+.alugue{
+  font-size: 70%;
+  font-weight: bold;
+  border-style: outset;
+  width: 115px;
+  height: 30px;
+  background-color: rgb(184, 184, 184);
+  position: relative;
+  left: 28%;
+  top: -3%;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.alugue:hover{
+  box-shadow: 2px 2px 12px black;
+}
+
+.filmes, produto{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 16px;
+  margin-top: -5px;
+  text-align: center;
+}
+
+.filmes img{
+  height: 250px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  border-radius: 2%;
+  box-shadow: 2px 2px 7px black;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.filmes img:hover{
+  opacity: 0.85;
+}
+
+.imagem, .preco{
+  position: relative;
+  bottom: 24px;
+}
+
+.redes{
+  background-color: rgb(150, 150, 150);
+  color:white;
+  font-weight: bold;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: -50px;
+}
+
+.social{
+  cursor: pointer;
+  margin: 5px 5px 5px 5px;
+  transition: opacity 0.5s;
+}
+
+.social:hover{
+  opacity: 0.70;
+}
+
+.redes h1{
+  color: black;
+}
+
+.tel{
+  position: initial;
+  color: black;
+  text-decoration: underline;
+}
+
+.tel a{
+  color: black;
+}
+
+/**Atribuindo css em estilos de tela difrente(mobille)**/
+@media screen and (max-width: 800px){
+
+header h1{
+  font-size: 3rem;
+}
+
+.redes h1{
+  margin-left: 6%;
+}
+
+.redes p{
+  margin-left: 6%;
+}
+
+#logoimg{
+  width: 75px;
+}
+
+.alugue{
+  position: relative;
+  left: 35%;
+  top: -3%;
+}
+
+.social{
+  margin-left: 12%;
+}
+
+}
+
+@media screen and  (max-width: 450px){
+  body{
+    padding: 5px 25px 25px 25px;
+  }
+
+  .alugue{
+    left: 25%;
+  }
+
+  .menu{
+    display: block;
+    width: 100%;
+  }
+}
